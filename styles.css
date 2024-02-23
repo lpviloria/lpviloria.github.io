@@ -1,28 +1,76 @@
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #2e60a1;
+.flex-container {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    border-style: solid;
+    border-width: 2px;
+    background-color: black;
     color: white;
-  }
+    border-color: black;
+}
+
+a {
+    color: white;
+}
+
+.ics-logo {
+    opacity: 0.2;
+}
+
+.photo {
+    border-width: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-flex {
+    display: flex;
+    border-style: none;
+}
+
+.skills_bio {
+    display: flex;
+    border-style: none;
+    text-align: center;
+}
+
+.project-12 {
+    border-width: 2px;
+}
+
+.project-22 {
+    border-width: 2px;
+}
+
+.project-150 {
+    border-width: 2px;
+}
+
+.skills {
+    border-width: 2px;
+}
+
+.bio {
+    border-width: 2px;
+}
+
+.projects {
+    text-align: center;
+}
+
+.footer {
+    border-style: solid;
+}
+
+.big-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
