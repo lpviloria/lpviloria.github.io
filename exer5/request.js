@@ -36,7 +36,11 @@ needle.post(
   }
 );
 
+needle.get('http://localhost:3000/find-by-author', (err, res) => {
+    console.log(res.body);   
+});
+
 needle.get('http://localhost:3000/find-by-isbn-author', (err, res) => {
-    console.log("hello hehe");   
+    console.log(res.body);   
 });
 
