@@ -1,0 +1,30 @@
+.flex-container1 {
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+}
+
+.flex-container2 {
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+}
+
+.forms {
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+}
+
+#add-item {
+  background-color: green;
+  color: white;
+}
