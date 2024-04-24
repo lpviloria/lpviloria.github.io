@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+import Appliances from './pages/apps';
+import Gadgets from './pages/gadgets';
+import Accessories from './pages/accs';
+import './styles.css';
 
 function App() {
+  let Component
+  switch(window.location.pathname){
+    case "/":
+      Component = Appliances
+      break
+    case "/appliances":
+      Component = Appliances
+      break
+    case "/gadgets":
+      Component = Gadgets
+      break
+    case "/accessories":
+      Component = Accessories
+      break
+    default:
+      Component = Appliances
+      break
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Component />
     </div>
   );
 }
