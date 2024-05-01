@@ -1,12 +1,13 @@
 import React from "react";
 import "./styles.css"
-import { addToCart } from "./event-script";
 
-function gadgets(){
-
-    const handleAddToCart = (itemName) => {
-        addToCart(itemName);
-    };
+function Gadgets({cart, setCart}){
+    
+    function handleAddToCart(item) { // Function to add items to the cart
+        setCart(prevCart => {
+            return {...prevCart, [item]: (prevCart[item] || 0) + 1}; // Access the previous cart and add the item to the cart object with the item name being the key and the quantity being the value. Also increment the quantity by one.
+        });
+    }
 
     return (
         <div className = "apps-flex">
@@ -36,4 +37,4 @@ function gadgets(){
     )
 }
 
-export default gadgets;
+export default Gadgets;
