@@ -8,6 +8,17 @@
     width: 100%;
     max-width: 300px;
     font-weight: bold; 
+    margin-left: auto;
+    position: relative;
+    top: -300px;
+}
+
+.shopping-cart-title {
+    text-align: right;
+    position: relative;
+    top: -300px;
+    right: 0;
+    
 }
 
 .remove-from-cart {
