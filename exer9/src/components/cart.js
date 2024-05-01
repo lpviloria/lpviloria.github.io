@@ -6,7 +6,7 @@ export function CartAdder({cart, setCart}) {
 
     const removeFromCart = (itemToRemove) => { // Function to remove items from the cart
         const newCart = {...cart}; // Create new copy of cart
-        if(newCart[itemToRemove] == 1){ // If the quantity of the item being removed is one, delete the item from the object so that it disappears from the website
+        if(newCart[itemToRemove] <= 1){ // If the quantity of the item being removed is one, delete the item from the object so that it disappears from the website
             delete newCart[itemToRemove];
         }
         else{ // Otherwise, decrease the quantity by one instead
