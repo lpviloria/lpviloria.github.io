@@ -16,8 +16,8 @@ export function CartAdder({cart, setCart}) {
     }
 
     return (
-        <div>
-            <h1>Shopping Cart (Total: {Object.keys(cart).length}) </h1>
+        <div className = "main-container">
+            <h1 className = "shopping-cart-title">Shopping Cart (Total: {Object.keys(cart).length}) </h1>
             <div>
                 {Object.keys(cart).length > 0 && Object.entries(cart).map(([item, quantity]) => ( // Check if the cart is empty, if not, display the items in the cart
                     <div className = "flex-container" key={item}>
