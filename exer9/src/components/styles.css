@@ -10,7 +10,8 @@
     font-weight: bold; 
     margin-left: auto;
     position: relative;
-    top: -300px;
+    top: -400px;
+    right: 123px;
 }
 
 .shopping-cart-title {
@@ -18,6 +19,7 @@
     position: relative;
     top: -300px;
     right: 0;
+    padding: 100px;
     
 }
 
