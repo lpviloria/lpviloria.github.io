@@ -2,11 +2,13 @@ import NavBar from './components/NavBar';
 import Appliances from './pages/apps';
 import Gadgets from './pages/gadgets';
 import Accessories from './pages/accs';
-import cartAdder from './components/cartAdder';
+import {CartAdder} from './components/cart';
+import {useState} from 'react';
 import './styles.css';
 
 function App() {
   let Component
+  const [cart, setCart] = useState({});
   switch(window.location.pathname){
     case "/":
       Component = Appliances
@@ -24,12 +26,12 @@ function App() {
       Component = Appliances
       break
   }
-  
+
   return (
     <div className="App">
       <NavBar />
-      <Component />
-      <cartAdder />
+      <Component setCart={setCart} cart={cart}/>
+      <CartAdder cart={cart} setCart={setCart}/>
     </div>
   );
 }
